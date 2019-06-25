@@ -1,7 +1,7 @@
 FROM ohoareau/ci-aws:latest
 
 RUN apt-get update -y && \
-    apt-get install -y curl unzip && \
+    apt-get install -y curl unzip git && \
     apt-get clean && \
     apt-get autoclean && \
     apt-get autoremove -y && \

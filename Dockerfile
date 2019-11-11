@@ -23,4 +23,6 @@ RUN mkdir /tmp/terraform && \
     chmod +x /bin/terraform && \
     rm -rf /tmp/terraform
 
+COPY ./scripts/terraform-cloud-api-token-set.sh /usr/local/bin/terraform-cloud-api-token-set
+
 WORKDIR /code
